@@ -40,7 +40,7 @@ public class ViewPagerIndicator extends LinearLayout {
     protected void initView(Context context) {
         mContext = context;
         LayoutInflater layoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layoutInflater.inflate(R.layout.view_page_indicator, this, true);
+        layoutInflater.inflate(R.layout.view_pager_indicator, this, true);
         mRootView = (LinearLayout) findViewById(R.id.view_pager_indicator_container);
     }
     /**

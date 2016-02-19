@@ -4,4 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="View Pager Indicator sample"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"/>
+
+        <com.trungvu.androidviewpagerindicator.component.ViewPagerIndicator
+            android:id="@+id/header_view_pager_indicator"
+            android:paddingTop="6dp"
+            android:paddingBottom="3dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+        </com.trungvu.androidviewpagerindicator.component.ViewPagerIndicator>
+    </LinearLayout>
+
+    <!-- View pager content -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
 </LinearLayout>
